@@ -4,7 +4,7 @@ class MovieDataService {
     return axios.get(`https://lvz-web-development-movie-reviews-app.onrender.com/api/v1/movies?page=${page}`); //http://localhost:5000/api/v1/movies?page=${page}
   }
   get(id) {
-    return axios.get(`https://lvz-web-development-movie-reviews-app.onrender.com/api/v1/id/${id}`); //http://localhost:5000/api/v1/movies/id/${id}
+    return axios.get(`https://lvz-web-development-movie-reviews-app.onrender.com/api/v1/movies/id/${id}`); //http://localhost:5000/api/v1/movies/id/${id}
   }
   find(query, by = "title", page = 0) {
     return axios.get(
